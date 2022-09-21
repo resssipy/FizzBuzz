@@ -1,4 +1,5 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class FizzBuzz {
     //Given an integer n, return a string array answer (1-indexed) where:
@@ -8,11 +9,11 @@ public class FizzBuzz {
     //answer[i] == "Buzz" if i is divisible by 5.
     //answer[i] == i (as a string) if none of the above conditions are true.
     public static void main(String[] args) {
-        System.out.print(fizzBuzz(100, 2, 7));
+        System.out.print(fizzBuzz(50, 2, 7));
     }
 
     private static List<String> fizzBuzz(int n,int o,int p) {
-        List<String> list = new ArrayList<String>();
+        List<String> list = new ArrayList<>();
         for (int i = 1; i <= n; i++) {
             if (i%(o * p) == 0) {
                 list.add("FizzBuzz");
